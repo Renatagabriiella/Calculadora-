@@ -5,10 +5,18 @@ function calcular() {
     var sexo = document.getElementsByName('radsex')
     var res = document.getElementById('resultado')
 
+
+
     if (campoaltura.value == '' || campopeso.value == '') {
         alert('Preencha todos os campos!')
         return
     }
+
+    // --- VALIDAÇÃO DO SEXO ---
+    if (!sexo[0].checked && !sexo[1].checked) {
+    alert('Selecione o sexo!')
+    return
+}
 
     // --- TRATAMENTO DA ALTURA ---
     let altura = campoaltura.value.replace(',', '.')
@@ -31,6 +39,8 @@ function calcular() {
     } else if (sexo[1].checked) {
         genero = 'Feminino'
     }
+
+
 
     if (imc < 18.5) {
         mensagem = `Você está <strong> abaixo do peso </strong>`

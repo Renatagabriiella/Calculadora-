@@ -1,0 +1,36 @@
+body {
+    background-color: rgba(166, 167, 238, 0.836);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
+
+#container {
+    background-color: rgba(250, 235, 215, 0.61);
+    width: 400px;
+    height: 350px;
+    border-radius: 20px ;
+    text-align: center;
+
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+#resultado {
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
